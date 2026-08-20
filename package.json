@@ -1,0 +1,22 @@
+{
+  "name": "automationpipelinepractice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satish1401/AutomationPipeLinePractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satish1401/AutomationPipeLinePractice/issues"
+  },
+  "homepage": "https://github.com/satish1401/AutomationPipeLinePractice#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
