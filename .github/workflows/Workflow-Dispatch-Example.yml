@@ -26,14 +26,13 @@ jobs:
       - run: echo "Deploying to ${{ inputs.environment }}"
       - run: echo "${{inputs.message}}"
 
-jobs:
   deploy2:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying to ${{ inputs.environment }}"
       - run: echo "${{inputs.message}}"
 
-jobs:
+
   deploy3:
     runs-on: ubuntu-latest
     steps:
