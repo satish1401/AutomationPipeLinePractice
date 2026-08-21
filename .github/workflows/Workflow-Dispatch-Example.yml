@@ -1,0 +1,41 @@
+name: Work flow dispatch example Manual Release
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+
+      message:
+        description: 'Deployment message'
+        required: true
+        default: 'Deploying new version'
+        type: string
+
+
+
+jobs:
+  deploy1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{inputs.message}}"
+
+jobs:
+  deploy2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{inputs.message}}"
+
+jobs:
+  deploy3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "${{inputs.message}}"
